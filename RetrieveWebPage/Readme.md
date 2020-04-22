@@ -1,1 +1,1 @@
-# Retrieving Web page Using <span color="blue">urllib</span>
+# Retrieving Web page Using @urllib
