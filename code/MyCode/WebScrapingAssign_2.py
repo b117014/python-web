@@ -9,8 +9,8 @@ for ct in range(loop):
     data = urllib.request.urlopen(url).read()
     soup = BeautifulSoup(data,'html.parser')
     tag = soup('a')
-    new_url = tag[pos].get('href',None)
+    new_url = tag[pos-1].get('href',None)
     url = new_url
-    name = tag[pos].contents[0]
+    name = tag[pos-1].contents[0]
 
 print(name)

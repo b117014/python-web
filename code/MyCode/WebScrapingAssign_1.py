@@ -8,6 +8,6 @@ soup = BeautifulSoup(data,'html.parser')
 span_tag = soup('span')
 sum=0
 for tag in span_tag:
-    sum+=int(tag.contents[0])
+    sum+=int(tag.contents[0])      
 
 print(sum)
